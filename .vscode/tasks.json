@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "🚀 Setup Inicial del Proyecto",
+            "type": "shell",
+            "windows": {
+                "command": "powershell -ExecutionPolicy Bypass -File .\\init_scripts\\init.ps1"
+            },
+            "linux": {
+                "command": "chmod +x ./init_scripts/init.sh && ./init_scripts/init.sh"
+            },
+            "osx": {
+                "command": "chmod +x ./init_scripts/init.sh && ./init_scripts/init.sh"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
